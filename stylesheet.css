@@ -40,15 +40,24 @@ address {
     height: 40px;
     padding-right: 40px;
 }
+@media screen and (max-width: 768px) {
+    .header {
+        height: 60px;
+        margin: -60px auto 0;
+    }
+    #nav {
+        height: 60px;
+    }
+}
 #dropdown {
     display: none;
     background: transparent;
     border: none;
     cursor: pointer;
-    margin: 0.5rem 3rem;
+    margin: 1rem 3rem;
 }
 #dropdownitems {
-    background-color: var(--dark);
+    background-color: #222;;
 }
 #navitems {
     display: grid;
@@ -70,17 +79,18 @@ address {
     .navlink {
         padding: 0;
         margin: 0;
-        color: white;
+        color: var(--light);
     }
 }
 #dropdownitems {
     display: none;
     position: absolute;
     width: 140px;
-    box-shadow: 0 1px 5px 0px black;
+    box-shadow: 0 2px 5px 0px black;
     padding: 0.5rem 0.2rem 0;
     z-index: 1;
-    margin-top: -0.2rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
   }
 .navlink {
     padding: 0.7rem 2rem;
@@ -89,6 +99,13 @@ address {
 }
 .navlink:hover {
     border-bottom: 1px solid var(--light);
+}
+@media screen and (max-width: 768px) {
+    .navlink:hover {
+        border-bottom: none;
+        font-size: 1.1rem;
+        transition: ease 0.2s;
+    }
 }
 #hero {
     display: grid;
@@ -138,7 +155,7 @@ address {
 }
 @media screen and (max-width: 768px) {
     .menusection {
-        margin: 0 3rem;
+        margin: 0 3em;
     }
 }
 .line {
@@ -185,7 +202,7 @@ address {
 }
 @media screen and (max-width: 768px) {
     .menuthumbnail {
-        width: calc(100vw - 12rem);
+        width: calc(100vw - 11.5rem);
         height: 250px;
     }
 }
