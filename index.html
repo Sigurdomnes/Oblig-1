@@ -25,7 +25,7 @@
     </div>
     <main>
         <div class="line"></div>
-        <a class="anchor" id="lunch"></a>
+        <a class="anchor" id="lunch" aria-hidden="true"></a>
         <h1 class="menuheader">Lunch Menu (served until 15:00)</h1>
         <section class="menusection">
             <ul>
@@ -58,7 +58,7 @@
                 </li>
             </ul>
         </section>
-        <a class="anchor" id="dinner"></a>
+        <a class="anchor" id="dinner" aria-hidden="true"></a>
         <h1 class="menuheader">Dinner Menu (served after 15:00)</h1>
         <section class="menusection">
             <ul>
@@ -91,7 +91,7 @@
                 </li>
             </ul>
         </section>
-        <a class="anchor" id="snacks"></a>
+        <a class="anchor" id="snacks" aria-hidden="true"></a>
         <h1 class="menuheader">Snack Menu</h1>
         <section class="menusection">
             <ul>
@@ -119,14 +119,21 @@
     <footer id="footer">
             <section class="info">
                 <h2 class="subheader">Location:</h2>
+                <address>
                 <p class="paragraph">Rainbow Road 9, 0101 Oslo, Norway</p>
+                <p class="paragraph">(<a href="#">Google Maps</a>)</p>
+                </address>
                 <h2 class="subheader">Opening hours:</h2>
                 <p class="paragraph">Tuesday - Thursday: 12:00 - 00:00</p>
                 <p class="paragraph">Friday - Sunday: 10:00 - 04:00</p>
                 <h2 class="subheader">Contact:</h2>
+                <address>
                 <p class="paragraph">E-mail: <a href="mailto:mail@programmersbar.no">mail@programmersbar.no</a></p>
                 <p class="paragraph">Telephone: <a href="tel:+47012345678">+47 012345678</a></p>
+                </address>
+                <p id="copyright">&copy; Sigurd Omnes (2021)</p>
             </section>
+
     </footer>
 </body>
 </html>
