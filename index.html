@@ -7,10 +7,30 @@
     <title>Programmer's Restaurant</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="header">
         <nav id="nav">
+            <button id="dropdown"><img src="img/bars.png">
+                <ul id="dropdownitems">
+                    <a href="#lunch"><li class="navlink">Lunch</li></a>
+                    <a href="#dinner"><li class="navlink">Dinner</li></a>
+                    <a href="#snacks"><li class="navlink">Snacks</li></a>
+                    <a href="#footer"><li class="navlink">About us</li></a>
+                </ul>   
+            </button>
+            <script>
+            const targetDiv = document.getElementById("dropdownitems");
+            const btn = document.getElementById("dropdown");
+            btn.onclick = function () {
+            if (targetDiv.style.display !== "none") {
+                targetDiv.style.display = "none";
+            } else {
+                targetDiv.style.display = "block";
+            }
+            };
+            </script>
             <ul id="navitems">
                 <a href="#lunch"><li class="navlink">Lunch</li></a>
                 <a href="#dinner"><li class="navlink">Dinner</li></a>
@@ -28,12 +48,12 @@
         <a class="anchor" id="lunch" aria-hidden="true"></a>
         <h1 class="menuheader">Lunch Menu (served until 15:00)</h1>
         <section class="menusection">
-            <ul>
+            <ol>
                 <li class="menulistitem">
                     <img class="menuthumbnail" src="img/omelette.jpg" alt="Omelette" aria-hidden="true">
                     <div class="menudescription">
                         <strong class="title">1. Omelette Alfredo</strong> 
-                        <span class="descr">Omelette with tomatoes, garlic, feta and parsley. Served with aioli, fresh bread and mixed salad on the side. </span> 
+                        <div class="descr">Omelette with tomatoes, garlic, feta and parsley. Served with aioli, fresh bread and mixed salad on the side. </div> 
                         <em class="allerg">Allergens: Egg, gluten</em>
                         <strong class="price">129,-</strong>
                     </div>
@@ -42,7 +62,7 @@
                     <img class="menuthumbnail" src="img/avocadosandwich.jpg" alt="Avocado Sandwich" aria-hidden="true">
                     <div class="menudescription">
                         <strong class="title">2. Avocado Sandwich</strong> 
-                        <span class="descr">Whole grain bread with salad, avocado and egg</span> 
+                        <div class="descr">Whole grain bread with salad, avocado and egg</div> 
                         <em class="allerg">Allergens: Egg, gluten</em>
                         <strong class="price">99,-</strong>
                     </div>
@@ -51,22 +71,22 @@
                     <img class="menuthumbnail" src="img/tomatosoup.jpg" alt="Tomato Soup" aria-hidden="true">
                     <div class="menudescription">
                         <strong class="title">3. Tomato Soup</strong> 
-                        <span class="descr">Tomato Soup with bread and salad</span> 
+                        <div class="descr">Tomato Soup with bread and salad</div> 
                         <em class="allerg">Allergens: Gluten</em>
                         <strong class="price">89,-</strong>
                     </div>
                 </li>
-            </ul>
+            </ol>
         </section>
         <a class="anchor" id="dinner" aria-hidden="true"></a>
         <h1 class="menuheader">Dinner Menu (served after 15:00)</h1>
         <section class="menusection">
-            <ul>
+            <ol>
                 <li class="menulistitem">
                     <img class="menuthumbnail" src="img/burger.jpg" alt="Cheese Burger" aria-hidden="true">
                     <div class="menudescription">
                         <strong class="title">4. Cheese Burger</strong> 
-                        <span class="descr">Ground beef cheese burger with brioche, onion, tomato, lettuce and dressing. Served with aioli and fries.</span> 
+                        <div class="descr">Ground beef cheese burger with brioche, onion, tomato, lettuce and dressing. Served with aioli and fries.</div> 
                         <em class="allerg">Allergens: Gluten, Lactose</em>
                         <strong class="price">169,-</strong>
                     </div>
@@ -75,7 +95,7 @@
                     <img class="menuthumbnail" src="img/spareribs.jpg" alt="Spare Ribs" aria-hidden="true">
                     <div class="menudescription">
                         <strong class="title">5. Spare Ribs</strong> 
-                        <span class="descr">Spare Ribs glazed with BBQ-sauce grilled in the oven. Served with mashed potatoes and salad.</span> 
+                        <div class="descr">Spare Ribs glazed with BBQ-sauce grilled in the oven. Served with mashed potatoes and salad.</div> 
                         <em class="allerg">Allergens: Lactose</em>
                         <strong class="price">149,-</strong>
                     </div>
@@ -84,22 +104,22 @@
                     <img class="menuthumbnail" src="img/steak.jpg" alt="Pepper steak" aria-hidden="true">
                     <div class="menudescription">
                         <strong class="title">6. Pepper Beef Steak</strong> 
-                        <span class="descr">300g marinated beef steak with pepper sauce. Served with fries and salad.</span> 
+                        <div class="descr">300g marinated beef steak with pepper sauce. Served with fries and salad.</div> 
                         <em class="allerg">Allergens: Lactose</em>
                         <strong class="price">199,-</strong>
                     </div>
                 </li>
-            </ul>
+            </ol>
         </section>
         <a class="anchor" id="snacks" aria-hidden="true"></a>
         <h1 class="menuheader">Snack Menu</h1>
         <section class="menusection">
-            <ul>
+            <ol>
                 <li class="menulistitem">
                     <img class="menuthumbnail" src="img/fries.jpg" alt="Omelette" aria-hidden="true">
                     <div class="menudescription">
                         <strong class="title">7. French Fries</strong> 
-                        <span class="descr">French Fries with aioli</span> 
+                        <div class="descr">French Fries with aioli</div> 
                         <em class="allerg">Allergens: Egg, gluten</em>
                         <strong class="price">49,-</strong>
                     </div>
@@ -108,12 +128,12 @@
                     <img class="menuthumbnail" src="img/garlicbread.jpg" alt="Avocado Sandwich" aria-hidden="true">
                     <div class="menudescription">
                         <strong class="title">8. Garlic Bread</strong> 
-                        <span class="descr">Garlic bread with salsa dip</span> 
+                        <div class="descr">Garlic bread with salsa dip</div> 
                         <em class="allerg">Allergens: Gluten</em>
                         <strong class="price">49,-</strong>
                     </div>
                 </li>
-            </ul>
+            </ol>
         </section>
     </main>
     <footer id="footer">
@@ -131,9 +151,8 @@
                 <p class="paragraph">E-mail: <a href="mailto:mail@programmersbar.no">mail@programmersbar.no</a></p>
                 <p class="paragraph">Telephone: <a href="tel:+47012345678">+47 012345678</a></p>
                 </address>
-                <p id="copyright">&copy; Sigurd Omnes (2021)</p>
             </section>
-
+            <p id="copyright">&copy; Sigurd Omnes (2021)</p>
     </footer>
 </body>
 </html>
