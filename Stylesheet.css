@@ -1,0 +1,152 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+    --light: #79b5cc;
+    --dark: rgb(39, 39, 39);
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style-type: none;
+}
+.header {
+    display: flex;
+    text-shadow: 1px 1px var(--dark);
+    background-color: #222;
+    z-index: 10;
+    height: 40px;
+    width: 100%;
+    position: sticky;
+    margin: -40px auto 0;
+    top: 0;
+    box-shadow: 0 1px 5px 0px black;
+}
+#nav {
+    margin: 0 auto;
+    width: 1000px;
+    height: 40px;
+    padding-right: 40px;
+}
+#navitems {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+    align-content: center;
+    color: var(--light);
+    font-weight: 700;
+    font-size: 0.8rem;
+
+}
+.navlink {
+    padding: 0.8rem 2rem;
+    margin-top: -0.8rem;
+    cursor: pointer;
+}
+.navlink:hover {
+    border-bottom: 1px solid var(--light);
+}
+#hero {
+    display: grid;
+    color: var(--light);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("img/hero.jpg");
+    background-position: center;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+#hero:after {
+    content: " ";
+    z-index: 8;
+    display: block;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000000c5;
+}
+.heroheader {
+    z-index: 9;
+    font-size: 3rem;
+    align-self: end;
+    justify-self: center;
+    text-shadow: 1px 1px var(--dark);
+}
+.herosubheader {
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
+    align-self: start;
+    justify-self: center;
+    text-shadow: 1px 1px var(--dark);
+}
+.menusection {
+    display: grid;
+    width: 1100px;
+    margin: 0 auto;
+    border-top: 1px var(--dark) solid;
+}
+.line {
+    margin: 3rem auto;
+    width: 1100px;
+    visibility: hidden;
+}
+.menuheader {
+    margin: 0 0 3rem;
+    text-align: center;
+    font-weight: 100;
+}
+.menulistitem {
+    display: grid;
+    grid-template-areas: 
+    "a b";
+    grid-gap: 2rem;
+    margin: 2rem;
+}
+.menuthumbnail {
+    grid-area: a;
+    height: 120px;
+    width: 160px;
+    object-position: center;
+    object-fit: cover;
+    justify-self: end;
+}
+.menudescription {
+    grid-area: b;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    width: 800px;
+    padding: 0.2rem 0;
+}
+.price {
+    align-self: end;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: -80px;
+    visibility: hidden;
+}
+#footer {
+    height: 50vh;
+    width: 100%;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 5rem 0;
+}
+.info {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+}
