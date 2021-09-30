@@ -138,11 +138,6 @@ address {
     text-shadow: 1px 1px var(--dark);
     margin: 0 3rem;
 }
-@media screen and (max-width: 768px) {
-    .heroheader {
-        padding-left: 1rem;
-    }
-}
 .herosubheader {
     display: flex;
     flex-direction: column;
