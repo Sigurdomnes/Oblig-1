@@ -188,8 +188,6 @@ address {
         grid-template-areas: 
         "a" "b";
     }
-    .menulistitem:nth-child(even) {
-    }
 }
 .menuthumbnail {
     grid-area: a;
