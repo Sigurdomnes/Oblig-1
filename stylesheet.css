@@ -267,3 +267,7 @@ a.anchor {
     text-align: center;
     font-size: 0.8rem;
 }
+.rapport {
+    width: 1100px;
+    margin: 5rem auto;
+}
