@@ -222,7 +222,11 @@ address {
     font-weight: bold;
 }
 .descr {
-
+    display: flex;
+    align-items: flex-start;
+}
+.descr > p {
+    margin: 0;
 }
 .allerg {
     font-style: italic;
