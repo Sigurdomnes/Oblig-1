@@ -226,7 +226,7 @@ address {
     align-items: flex-start;
 }
 .descr > p {
-    margin: 0;
+    margin-top: 0.3rem;
 }
 .allerg {
     font-style: italic;
