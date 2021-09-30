@@ -140,7 +140,7 @@ address {
 }
 @media screen and (max-width: 768px) {
     .heroheader {
-        padding-left: 2rem;
+        padding-left: 1rem;
     }
 }
 .herosubheader {
