@@ -138,6 +138,11 @@ address {
     text-shadow: 1px 1px var(--dark);
     margin: 0 3rem;
 }
+@media screen and (max-width: 768px) {
+    .heroheader {
+        padding-left: 2rem;
+    }
+}
 .herosubheader {
     display: flex;
     flex-direction: column;
@@ -248,7 +253,7 @@ a.anchor {
 .info {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 1100px;
+    max-width: calc(1100px - 2rem);
     height: 100%;
     padding: 5rem 3rem 0;
     margin: 0 auto;
@@ -257,6 +262,7 @@ a.anchor {
     .info {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+        margin-left: 2rem;
     }
 }
 .subheader {
